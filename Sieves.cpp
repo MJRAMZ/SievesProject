@@ -22,10 +22,10 @@ template <class T> SievesQueue<T>::SievesQueue()
 
 }
 
-/*****************************************
+/*************************************************
 *		  SievesQueue::display           *
-* Displays all node values of the queue. *
-******************************************/
+* Displays all node values of the queue.         *
+**************************************************/
 template <class T> void SievesQueue<T>::display()
 {
     // standard namespace directive
@@ -57,7 +57,7 @@ template <class T> void SievesQueue<T>::display()
 }
 
 /*******************************************************
-*				SievesQueue::isEmpty                   *
+*		SievesQueue::isEmpty                   *
 * Returns true if the queue is empty. False otherwise. *
 ********************************************************/
 template <class T> bool SievesQueue<T>::isEmpty()
@@ -74,7 +74,7 @@ template <class T> bool SievesQueue<T>::isEmpty()
 }
 
 /***************************************************
-*				SievesQueue::size                  *
+*		SievesQueue::size                  *
 * Returns the number of elements within the queue. *
 ****************************************************/
 template <class T> int SievesQueue<T>::getSize()
@@ -84,7 +84,7 @@ template <class T> int SievesQueue<T>::getSize()
 }
 
 /**************************************************
-*			SievesQueue::peekFront                *
+*	    SievesQueue::peekFront                *
 * Looks at and returns the front value the queue. *
 * Does not remove value from queue.               *
 ***************************************************/
@@ -95,7 +95,7 @@ template <class T> T SievesQueue<T>::peekFront()
 }
 
 /**************************************************
-*			SievesQueue::peekRear                 *
+*	    SievesQueue::peekRear                 *
 * Looks at and returns the rear value the queue.  *
 * Does not remove value from queue.               *
 ***************************************************/
@@ -106,7 +106,7 @@ template <class T> T SievesQueue<T>::peekRear()
 }
 
 /*************************************************
-*			SievesQueue::pushBack                *
+*	    SievesQueue::pushBack                *
 * Inserts a node value to the rear of the queue. *
 **************************************************/
 template <class T> void SievesQueue<T>::pushBack(T newItem)
@@ -138,7 +138,7 @@ template <class T> void SievesQueue<T>::pushBack(T newItem)
 }
 
 /********************************
-*	  SievesQueue::enqueue      *
+*     SievesQueue::enqueue      *
 * Calls the pushBack function.  *
 *********************************/
 template <class T> void SievesQueue<T>::enqueue(T newItem)
@@ -148,7 +148,7 @@ template <class T> void SievesQueue<T>::enqueue(T newItem)
 }
 
 /****************************************************
-*			SievesQueue::popFront                   *
+*	    SievesQueue::popFront                   *
 * Removes a node value from the front of the queue. *
 *****************************************************/
 template <class T> T SievesQueue<T>::popFront()
@@ -182,7 +182,7 @@ template <class T> T SievesQueue<T>::popFront()
 }
 
 /********************************
-*	  SievesQueue::dequeue      *
+*     SievesQueue::dequeue      *
 * Calls the popFront function.  *
 *********************************/
 template <class T> T SievesQueue<T>::dequeue()
@@ -191,10 +191,10 @@ template <class T> T SievesQueue<T>::dequeue()
     return popFront();
 }
 
-/********************************************************
-*	               SievesQueue::fillQueue               *
+/***************************************************************
+*	             SievesQueue::fillQueue                    *
 * Fills an empty queue with consecutive integers 2 through N.  *
-*********************************************************/
+****************************************************************/
 template <class T> void SievesQueue<T>::fillQueue(T num)
 {
     // set maxNum to user submitted integer value
